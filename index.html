@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ruqia Fatima</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ruqia Fatima</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#professional" onclick="toggleMenu()">Professional</a></li>
+                <li><a href="#leadership" onclick="toggleMenu()">Leadership</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Ruqia Fatima profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ruqia Fatima</h1>
+            <p class="section__text__p2">Engineering Student skilled in Software, Hardware, Embedded Systems, and AI/ML</p>
+            <div class="btn_container">
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/resume.pdf')"
+                >
+        
+                Resume
+                </button>
+                <button
+                    class="btn btn-color-1"
+                    onclick="location.href='./#contact'"
+                >
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ruqia-fatima-139850215/?originalSubdomain=ca'"/>
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/rr-fatima'"/>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                    src="./assets/about_me.png"
+                    alt = "Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                            src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Highlights</h3> 
+                        <p>Dean’s Honour List <br /> GPA: 3.82/4.0</p>
+
+                    </div>
+                    <div class="details-container">
+                        <img
+                            src="./assets/education.png"
+                            alt="Education Icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>University of Toronto<br />BASc Computer Engineering <br />3rd Year</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a passionate and curious engineering student specializing in Computer Engineering at the University of Toronto. My technical interests lie at the intersection of software development, hardware design, and artificial intelligence. I enjoy solving complex problems, whether it's developing efficient algorithms, training machine learning models, or programming embedded systems. I am eager to apply my interdisciplinary skills to build impactful and innovative engineering solutions.                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>✔</span> C, C++ - Experienced</div>
+                        <div class="skill-item"><span>✔</span> Java, Python, MATLAB</div>
+                        <div class="skill-item"><span>✔</span> Verilog, Nios V Assembly</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h2 class="experience-sub-title">Hardware & Embedded Systems</h2>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>✔</span> Nios V Processor, Arduino</div>
+                        <div class="skill-item"><span>✔</span> Quartus, ModelSim, LTSpice</div>
+                        <div class="skill-item"><span>✔</span> STM32 Microcontrollers</div>
+                        <div class="skill-item"><span>✔</span> Zephyr RTOS</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h2 class="experience-sub-title">AI & Machine Learning</h2>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>✔</span> PyTorch, NumPy, Pandas</div>
+                        <div class="skill-item"><span>✔</span> Matplotlib, Google Colab</div>
+                        <div class="skill-item"><span>✔</span> Data Preprocessing</div>
+                        <div class="skill-item"><span>✔</span> Model Training & Evaluation</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h2 class="experience-sub-title">Tools & Environments</h2>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>✔</span> Git/Github, GDB, Valgrind</div>
+                        <div class="skill-item"><span>✔</span> Figma, Google Colab</div>
+                        <div class="skill-item"><span>✔</span> VS Code </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/cube.png" alt="Rubik's Cube Solver" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Rubik's Cube Solver</h2>
+            <p class="project-desc">
+                Developed a C program to automate solving a 3x3 Rubik's Cube, reducing average solving time by 80%. Implemented accurate cube manipulation logic and reusable rotation functions, and authored technical documentation with educational resources.
+            </p>
+            <div class="tech-details">
+                <h3>Technologies Used:</h3>
+                <div class="tech-chips">
+                <span class="tech-chip">C</span>
+                <span class="tech-chip">Modular Programming</span>
+                <span class="tech-chip">Git</span>
+                <span class="tech-chip">Edge Case Testing</span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rr-fatima/Rubiks-Cube-Solver.git'">GitHub</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/kek5Cc7_EZQ'">Live Demo</button>
+            </div>
+            </div>
+
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/AI.png" alt="Skin Lesion Classification" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Skin Lesion Classification</h2>
+            <p class="project-desc">
+                Led a team to develop deep learning models for multi-class skin lesion classification. Trained baseline and EfficientNet-B2 CNN models on HAM10000 (7 classes) and ISIC 2019 (8 classes), achieving up to 81% test accuracy and 0.82 macro F1.
+            </p>
+            <div class="tech-details">
+                <h3>Technologies Used:</h3>
+                <div class="tech-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">PyTorch</span>
+                <span class="tech-chip">EfficientNet</span>
+                <span class="tech-chip">Transfer Learning</span>
+                <span class="tech-chip">Data Augmentation</span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rr-fatima/Skin-Lesion-Classification.git'">GitHub</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/wJvBUsHvqQI'">Live Demo</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1cAFGH8soYw0u-HKGgjR1cVcGExcvvGgu/view?usp=sharing'">Report</button>
+            </div>
+            </div>
+
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/gis.png" alt="Mapping Application" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Tourist Transit Cartograph</h2>
+            <p class="project-desc">
+                Built a GIS system in C++ to visualize and solve routing problems for real-world city maps. Designed interactive UI and optimized data structures for fast search and rendering performance.
+            </p>
+            <div class="tech-details">
+                <h3>Technologies Used:</h3>
+                <div class="tech-chips">
+                <span class="tech-chip">C++</span>
+                <span class="tech-chip">Data Structures</span>
+                <span class="tech-chip">Git</span>
+                <span class="tech-chip">Valgrind</span>
+                <span class="tech-chip">Linux</span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/pkyaccq8uis'">Live Demo</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/presentation/d/1Z7Ke_U7GLMZ0gH0VP0Z8eFQgmi1z-kE2i8KBJexEcvE/edit?usp=sharing'">Presentation</button>
+            </div>
+            </div>
+
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/obstacle.png" alt="Obstacle Avoidance Game" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Obstacle-Avoidance Game</h2>
+            <p class="project-desc">
+                Created a Verilog-based game with real-time VGA graphics on the DE1-SoC board. Designed FSM-based obstacle mechanics and keyboard control logic with optimized collision detection.
+            </p>
+            <div class="tech-details">
+                <h3>Technologies Used:</h3>
+                <div class="tech-chips">
+                <span class="tech-chip">Verilog</span>
+                <span class="tech-chip">FSMs</span>
+                <span class="tech-chip">Quartus</span>
+                <span class="tech-chip">ModelSim</span>
+                <span class="tech-chip">DE1-SoC</span>
+                <span class="tech-chip">VGA Display</span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/2ipJj3wREY0'">Live Demo</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/presentation/d/1M6ZWi0NOvf-jgymHS5wxKaLPurg3yclr2PguID-a5jA/edit?usp=sharing'">Presentation</button>
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/gravity.png" alt="Gravity Flip Game" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Gravity Flip Game</h2>
+            <p class="project-desc">
+                Designed a gravity-based arcade game on the DE1-SoC board using C for the Nios V processor. Implemented gameplay mechanics, display updates, and sound I/O for real-time feedback.
+            </p>
+            <div class="tech-details">
+                <h3>Technologies Used:</h3>
+                <div class="tech-chips">
+                <span class="tech-chip">C</span>
+                <span class="tech-chip">Nios V</span>
+                <span class="tech-chip">PS/2 Keyboard</span>
+                <span class="tech-chip">VGA</span>
+                <span class="tech-chip">Real-Time I/O</span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/8Sh9WHDPzrA'">Live Demo</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/document/d/1XJsD6qPkfrUCk6iXvwc4VPH4mQO78dkHG8lOlt65Ejo/edit?usp=sharing'">Report</button>
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/reversi.png" alt="Reversi AI Game" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Reversi AI Game</h2>
+            <p class="project-desc">
+                Developed an AI agent for Reversi using the Minimax algorithm. Implemented strategic move evaluation based on mobility and board control, supporting game boards from 4x4 to 26x26.
+            </p>
+            <div class="tech-details">
+                <h3>Technologies Used:</h3>
+                <div class="tech-chips">
+                <span class="tech-chip">C</span>
+                <span class="tech-chip">Minimax Algorithm</span>
+                <span class="tech-chip">AI Evaluation</span>
+                <span class="tech-chip">Turn-based Logic</span>
+                <span class="tech-chip">Edge Case Handling</span>
+                </div>
+            </div>
+            <div class="btn-container">
+
+            </div>
+            </div>
+
+            
+
+        </div>
+
+    </section>
+    
+
+    <section id="professional">
+    <p class="section__text__p1">Where I've Worked</p>
+    <h1 class="title">Professional Experience</h1>
+    <div class="projects-grid">
+
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/utat.png" alt="UTAT Logo" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Firmware Member – UTAT Space Systems</h2>
+        <p class="experience-dates">May 2025 - Present</p>
+        <p class="project-desc">
+            Developed firmware using Zephyr RTOS for STM32 microcontrollers on a CubeSat. Integrated RTC synchronization and collaborated with electrical and systems subteams.
+        </p>
+        <div class="tech-details">
+            <h3>Technologies Used:</h3>
+            <div class="tech-chips">
+            <span class="tech-chip">C</span>
+            <span class="tech-chip">Zephyr RTOS</span>
+            <span class="tech-chip">STM32</span>
+            <span class="tech-chip">Git</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/sunnybrook.png" alt="ESP Project" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Design Engineer – ESP Project II</h2>
+        <p class="experience-dates">Jan 2024 - Apr 2024</p>
+        <p class="project-desc">
+            Developed a user-friendly website to transmit audiovisual stimuli and capture ratings for brain research at Sunnybrook Research Institute. Created and evaluated design mockups in Figma, and presented final designs to stakeholders.
+        </p>
+        <div class="tech-details">
+            <h3>Technologies Used:</h3>
+            <div class="tech-chips">
+            <span class="tech-chip">Figma</span>
+            <span class="tech-chip">UI/UX Design</span>
+            <span class="tech-chip">HTML/CSS</span>
+            <span class="tech-chip">Stakeholder Communication</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/explorer.png" alt="Explorer Hop" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Content Creator – Explorer Hop</h2>
+        <p class="experience-dates">Sep 2021 - Sep 2023</p>
+        <p class="project-desc">
+            Designed 50+ quizzes and worksheets for math students (Grades 6–12), improving engagement by 20%. Maintained and enhanced LMS content, supported 100+ students, and contributed to a 10% growth in enrollments.
+        </p>
+        <div class="tech-details">
+            <h3>Technologies Used:</h3>
+            <div class="tech-chips">
+            <span class="tech-chip">Thinkific</span>
+            <span class="tech-chip">Canvas LMS</span>
+            <span class="tech-chip">Copywriting</span>
+            <span class="tech-chip">Content Design</span>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- Add more professional roles as needed -->
+    </div>
+    </section>
+
+    <section id="leadership">
+    <p class="section__text__p1">My Impact</p>
+    <h1 class="title">Leadership Experience</h1>
+    <div class="projects-grid">
+
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/skule.png" alt="Skule External" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Outreach Coordinator – Skule External</h2>
+        <p class="experience-dates">Jun 2025 – Present</p>
+        <p class="project-desc">
+            Lead outreach initiatives within the Skule™ Engineering Society to connect students with organizations like ESSCO, CFES, OSPE, and PEO. Collaborate with universities across Ontario to co-host inter-school events and represent student interests through cross-campus advocacy.
+        </p>
+        <div class="tech-details">
+            <h3>Key Skills:</h3>
+            <div class="tech-chips">
+            <span class="tech-chip">Leadership</span>
+            <span class="tech-chip">Event Planning</span>
+            <span class="tech-chip">Communication</span>
+            <span class="tech-chip">Team Collaboration</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/university.png" alt="University Exploration" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Co-Leader – University Exploration Initiative</h2>
+        <p class="experience-dates">Sep 2023 - Present</p>
+        <p class="project-desc">
+            Organized and led university campus tours for high school students, inspiring them to pursue post-secondary studies. Mentored female students toward STEM careers, resulting in five confirmed engineering admissions.
+        </p>
+        <div class="tech-details">
+            <h3>Skills Demonstrated:</h3>
+            <div class="tech-chips">
+            <span class="tech-chip">Mentorship</span>
+            <span class="tech-chip">Public Speaking</span>
+            <span class="tech-chip">STEM Outreach</span>
+            <span class="tech-chip">Youth Engagement</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/mbot.png" alt="Robotics Club" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Coach & Event Coordinator – Robotics Club</h2>
+        <p class="experience-dates">Sep 2021 - June 2023</p>
+        <p class="project-desc">
+            Taught 60+ middle schoolers to program Mbot robots and led 12 robotics outreach events. Organized FLL and Tech competitions, securing $5,000 in sponsorships and increasing community engagement by 40%.
+        </p>
+        <div class="tech-details">
+            <h3>Skills Demonstrated:</h3>
+            <div class="tech-chips">
+            <span class="tech-chip">STEM Education</span>
+            <span class="tech-chip">Robotics Coaching</span>
+            <span class="tech-chip">Event Logistics</span>
+            <span class="tech-chip">Fundraising</span>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- Add more leadership roles as needed -->
+    </div>
+    </section>
+
+    <section id = "contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class = "contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+                <p><a href="mailto:ruqia.fatima@mail.utoronto.ca">ruqia.fatima@mail.utoronto.ca</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/ruqia-fatima-139850215/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#professional">Professional</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Ruqia Fatima. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
